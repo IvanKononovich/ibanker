@@ -1,14 +1,12 @@
 .body {
-    background-color: rebeccapurple;
+    background-color: #000000cf;
     min-height: 100vh;
     min-width: 1650px;
 }
 
 
 /* start header style */
-
 .header {
-    /* max-height: 120px; */
     width: 100%;
     display: flex;
     justify-content: space-between;
@@ -273,7 +271,6 @@
         opacity: 1;
     }
 }
-
 /* end header style */
 
 
@@ -285,7 +282,7 @@
     position: absolute;
     z-index: 5;
     top: 120px;
-    bottom: 0;
+    bottom: 110px;
 }
 .slider {
     position: absolute;
@@ -330,6 +327,8 @@
 .slide__text-container_bottom {
     padding-left: 40px;
     max-width: 100%;
+    justify-content: space-between;
+    margin-bottom: 70px;
 }
 .slide__text-title {
     max-width: 470px;
@@ -377,7 +376,7 @@
     color: #ffffff;
     text-decoration: none;
     align-self: flex-end;
-    margin-left: 140px;
+    margin-right: 130px;
 }
 .slide__link-read-more:hover {
     color: #ffffff7d; 
@@ -395,3 +394,64 @@
     background-size: cover;
 }
 /* end main style */
+
+
+
+
+/* start footer style */
+.footer {
+    position: absolute;
+    z-index: 10;
+    bottom: 0;
+    height: 110px;
+    width: 100%;
+    background-color: #1a0c0ca3;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.footer__social-link-list {
+    list-style-type: none;
+    display: flex;
+    justify-content: flex-start;
+    padding-left: 95px;
+}
+.footer__social-link {
+    transition: opacity 0.3s;
+    display: block;
+    width: 15px;
+    height: 15px;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: contain;
+    margin-right: 100px;
+}
+.footer__social-link:hover {
+    opacity: 0.7;
+}
+.footer__social-link_bg_1 {
+    background-image: url('../img/icon-1.svg');
+}
+.footer__social-link_bg_2 {
+    background-image: url('../img/icon-2.svg');
+}
+.footer__social-link_bg_3 {
+    background-image: url('../img/icon-3.svg');
+}
+.footer__link-to-call {
+    transition: opacity 0.3s;
+    display: block;
+    max-width: 385px;
+    padding-left: 160px;
+    padding-right: 130px;
+    color: #000000;
+    font-family: 'Century Expanded', serif;
+    font-size: 18px;
+    line-height: 110px;
+    text-decoration: none;
+    background: #ffffff url('../img/icon-4.svg') no-repeat 130px 50%;
+}
+.footer__link-to-call:hover {
+    opacity: 0.7;
+}
+/* end footer style */
