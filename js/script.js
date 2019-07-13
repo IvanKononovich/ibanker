@@ -4,7 +4,7 @@
 
 const burger = document.querySelector('.burger');
 
-function changeStateBurger() {
+function changeStateBurger(event) {
     const burgerLines = document.querySelector('.burger__container-lines');
     const burgerContainerContent = document.querySelector('.burger__container');
     const header = document.querySelector('.header');
